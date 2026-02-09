@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content/**/*";
+
+@theme static {
+    --font-sans: 'Public Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --color-forest-50: #f1f9f1;
+    --color-forest-100: #e0f2e0;
+    --color-forest-200: #c2e5c2;
+    --color-forest-300: #93d093;
+    --color-forest-400: #5db35d;
+    --color-forest-500: #3a9a3a;
+    --color-forest-600: #228b22;
+    --color-forest-700: #1d6f1d;
+    --color-forest-800: #1a581a;
+    --color-forest-900: #164916;
+    --color-forest-950: #0b280b;
+
+    --color-sand-50: #F9F8F6;
+    --color-sand-100: #F1EFEA;
+    --color-sand-200: #E7E2D8;
+    --color-sand-300: #D5CDBB;
+    --color-sand-400: #BFAF94;
+    --color-sand-500: #A38F6D; /* Tom médio terroso */
+    --color-sand-600: #897556;
+    --color-sand-700: #6F5E46;
+    --color-sand-800: #5A4D3A;
+    --color-sand-900: #4B4132;
+    --color-sand-950: #28221A;
+}
+
+.dark {
+    --ui-bg: var(--ui-color-neutral-950);
+    --ui-bg-muted: var(--ui-color-neutral-900);
+    --ui-bg-elevated: var(--ui-color-neutral-900);
+    --ui-bg-accented: var(--ui-color-neutral-800);
+}

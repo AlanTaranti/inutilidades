@@ -12,6 +12,18 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxt/ui',
-    'nuxt-og-image'
-  ]
+    'nuxt-og-image',
+    '@vueuse/nuxt'
+  ],
+
+  css: ['~/assets/css/main.css'],
+
+  nitro: {
+    prerender: {
+      routes: [
+        '/'
+      ],
+      crawlLinks: true
+    }
+  },
 })
