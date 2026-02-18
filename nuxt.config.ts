@@ -13,10 +13,15 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     'nuxt-og-image',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@nuxtjs/i18n',
   ],
 
   css: ['~/assets/css/main.css'],
+
+  i18n: {
+    defaultLocale: 'pt-BR'
+  },
 
   nitro: {
     prerender: {
